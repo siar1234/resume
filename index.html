@@ -248,7 +248,7 @@
       sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if (content.scrollTop >= sectionTop - sectionHeight / 3) {
+        if (content.scrollTop >= sectionTop - 100) {
           current = section.getAttribute('id');
         }
       });
